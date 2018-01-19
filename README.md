@@ -7,7 +7,7 @@ $ git clone https://github.com/joyneop/hide.git
 $ cd hide
 $ npm install .
 $ npm link
-```s
+```
 
 ## Usage
 
