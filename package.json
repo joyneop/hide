@@ -1,0 +1,26 @@
+{
+  "name": "hide",
+  "bin": "index.js",
+  "version": "0.1.0",
+  "description": "Hide files, simple and easy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyneop/hide.git"
+  },
+  "keywords": [
+    "cli|utility|util"
+  ],
+  "author": "Joy Neop (a.k.a. Neruthes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joyneop/hide/issues"
+  },
+  "homepage": "https://github.com/joyneop/hide",
+  "dependencies": {
+    "commander": "*"
+  }
+}
