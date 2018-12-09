@@ -56,19 +56,17 @@ app.cli_release = () => {
 
 program.usage('file_1 file_2 ...');
 
-program.option('-a, --all', 'hide all files in current dicrectory');
 program.option('-r, --release', 'release all hidden files and directories in current directory');
 
 program.parse(process.argv);
 
 if (program.release) {
     app.cli_release();
-} else if (program.all) {
+
+} else {
     exec('ls -1', function (err, stdout, stderr) {
         if (stdout) {
             stdout.trim().split('\n').map(app.cli_hide);
         };
     });
-} else {
-    program.args.map(app.cli_hide);
-};
+}
